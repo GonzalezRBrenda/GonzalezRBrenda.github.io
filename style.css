@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Josefin+Sans:wght@200 & family= Roboto:ital,wght@0,100;0,300;1,100 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Josefin+Sans:ital,wght@0,200;0,300;1,200 & family= Open+Sans & family= Roboto:ital,wght@ 0,100;0,300;1,100 & mostrar=cambiar');
+.buttons {
+    min-width:10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    align-items:flex-start ;
+    align-content: flex-start;
+}  
+  .buttons a {
+    text-decoration: none;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: rgb(142, 81, 151);
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  .d-flex img{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    color: #f1f1f1;
+}
+  .buttons a:hover {
+    transform: scale(1.2);
+    color: rgb(192, 115, 159);
+  }
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-item{
+    font-size: 20px;
+    width: 200px   
+}
+.dropdown-item{
+    font-size: 20px;
+}
+.nav-item dropdown{
+    font-size: 20px;
+    color: rgb(142, 81, 151);
+    width: 300px 
+}
+.slide img{
+    height: 90vh;
+}
+
+.carousel-inner{
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    width: 340px;
+}
+.d-item{
+    height: 600px;
+}
+.d-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+   
+}
+
+.contenedor img{
+    width: 50px;  
+    
+}
+.caja{
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(142, 81, 151);
+    text-align: center;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 370px;
+    margin: 10px 5px 10px 5px;
+    align-items: center;
+    
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: rgb(220, 192, 208);
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(185, 154, 188);
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 0 5px 10px #000;
+}
+.card .back .link{
+    border-top: solid 1px rgb(192, 115, 159); 
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-decoration: none;
+}
+.card .back .link a{
+    color: rgb(180, 91, 144);
+    text-decoration: none;
+}
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.card .back p{
+    letter-spacing: 1px;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.content1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0vh;
+}
+.header{
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+header h1{
+    text-align: center;
+    align-content: space-around;
+    font-size: 40px;
+    color: #000000;
+    padding: 20px;
+    margin: 20 0 0 0;
+}
+.contenedori{
+    max-width: 1800px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.contenedori .contenedori-items{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 30px;
+    row-gap: 30px;
+    width: 100%;
+    transition: .3s;
+}
+.contenedori .contenedori-items .item{
+    max-width: 300px;
+    padding: 25px;
+    border: 1px solid rgb(142, 81, 151);
+    border-radius: 10px;
+    padding: 10px 0 10px 50px;
+    width: 290px;
+    height: 340px;
+    transition: .3s;
+    justify-content: space-between;
+
+}
+.contenedori-items .item:hover{
+    box-shadow: 0 0 10px rgb(192, 115, 159);
+    scale: 1.05;
+}
+.contenedori-items .item .img-item{
+    width: 100%;
+}
+.item img{
+    width: 180px;
+    height: 230px;
+    margin: 0 0 0 10px;
+}
+.contenedori-items .item .titulo-items{
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;  
+}
+.titulo-items{
+    text-align: center;
+}
+.contenedori-items .item .precio-item{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    justify-content: center;
+    
+}
+.contenedori-items .item .boton-item{
+    display: block;
+    margin: 0 0 0 25px;
+    align-items: center;
+    border: none;
+    background: rgb(220, 192, 208);
+    color: rgb(142, 81, 151);
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.d-flex img{
+    width: 35px;
+    height: 35px;
+}
+.pie-pagina{
+    margin: 25px 0 0 0;
+    width: 100%;
+    background-color: rgb(178, 125, 155); 
+}
+.pie-pagina .grupo-1{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 130px;
+    height: 130px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: rgb(223, 215, 220);
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: rgb(223, 215, 220);
+    margin-right: 10px;
+    background-color: rgb(142, 81, 151);
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: rgb(192, 115, 159);
+}
+.pie-pagina .grupo-2{
+    background-color: rgb(142, 100, 149);
+    padding: 15px 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        padding: 35px 0px;
+    }
+}
+.present{
+    color: rgb(142, 81, 151);
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+    margin: 25px 100px 50px 100px;
+    background-color: rgb(247, 242, 245);
+}
+.present img{
+    width: 100px;
+    margin: 20px 0 20px 0;
+}
+.parr1{
+    color: #000;
+    font-size: 18px;
+    padding: 25px;
+    margin: 25px 0 0 0;
+}
+.formulario{
+    box-sizing: border-box;
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgb(178, 125, 155);
+    position: relative;
+}
+.formulario-titulo{
+    text-align: center;
+    margin-top: 0;
+    color: rgb(142, 81, 151);
+}
+.formulario-input, .formulario-label, .formulario-submit{
+    display: block;
+    width: 100%;    
+    font-size: 1.3em; 
+}
+.formulario-input{
+    padding: 20px;
+    background: rgb(220, 192, 208,0.2);
+    border: 1px solid rgb(185, 154, 188);
+    margin-bottom: 40px;
+}
+
+.formulario-label{
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -85px;
+    z-index: -20;
+    color: rgb(180, 91, 144);
+}
+.formulario-submit{
+    background: rgb(192, 115, 159);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+.noticia h1{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(180, 91, 144);
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.noticia p{
+    text-align: center;
+    margin: 0, 15px, 0, 15px;
+}
+.btnn{
+    text-decoration: none;
+}
+    
+
+
